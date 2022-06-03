@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import Skeleton from 'react-loading-skeleton'
+import {NavLink} from 'react-router-dom'
 
 function Products() {
     const [data, setData] = useState([]);
@@ -57,7 +59,7 @@ function Products() {
                                     <div className="card-body">
                                         <h5 className="card-title">{e.title.substring(0, 8)}...</h5>
                                         <p className="card-text">${e.price}</p>
-                                        <a href="/" className="btn btn-primary">Go somewhere</a>
+                                        <NavLink to={`/products/${e.id}`} className="btn btn-primary">Mehsula bax</NavLink>
                                     </div>
                                 </div>
                             </div>
