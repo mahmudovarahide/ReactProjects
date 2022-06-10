@@ -3,10 +3,10 @@ import React from 'react'
 
 function Cart() {
   return (
-    <div>
+    <>
       price
       {/* <p>{product.qty} X ${product.price} = ${product.qty * product.price}</p> */}
-    </div>
+    </>
   )
 }
 export default Cart

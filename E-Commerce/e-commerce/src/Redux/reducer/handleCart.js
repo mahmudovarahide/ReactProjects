@@ -18,7 +18,6 @@ const handleCart = (state = cart, action) => {
                     }
                 ]
             }
-            break;
 
 
         case "DELITEM":
@@ -29,10 +28,8 @@ const handleCart = (state = cart, action) => {
                 return state.map((x) =>
                     x.id === e.id ? {...x, qty: x.qty - 1 } : x)
             }
-            break;
         default:
             return state;
-            break;
     }
 }
 export default handleCart
